@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:aliceblue;
+}
+main {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #1d62da;
+    color:aliceblue;
+}
+    header > nav {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+    .second-nav {
+        color: #1d62da;
+        background-color:aliceblue;
+        display: flex;
+        justify-content:space-evenly;
+    }
+    .second-nav > div {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content:space-evenly;
+    }
+main {
+    background-color: #1d62da;
+    display: flex;
+    justify-content: space-between;
+}
+    main div {
+        flex: 3;
+    }   
+        main div p{
+            padding: 0 1rem;
+        }
+p{
+    font-size: 3rem;
+    color: aliceblue;
+}
+.img-bg {
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(252, 244, 233);
+    
+}
+    .img-bg::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image:url("./img/9aca8e21-dba3-45ae-9741-88e29890ec15.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: initial;
+    }
+    .img-bg div {
+        width: 22%;
+    }
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+h5 {
+    font-size: 1.25rem;
+    text-align: center;
+}
